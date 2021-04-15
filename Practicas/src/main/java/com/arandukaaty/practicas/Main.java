@@ -1,6 +1,10 @@
 package com.arandukaaty.practicas;
 
 // Clase
+import java.sql.SQLException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 public class Main {
     // Atributos
 
@@ -18,15 +22,16 @@ public class Main {
             Cliente clienteDos = new Cliente(2, "Cliente dos");
             System.out.println(clienteDos.getId());
             System.out.println(clienteDos.getNombre());
-            
+
             // Estructuras del lenguaje
             Estructura.structuraIf();
+
+            // Paquetes de Java
+            PaquetesJava.paquetesJavaSystem();
         }
 
-        // Paquetes de Java
-        PaquetesJava.paquetesJavaSystem();
-        
-
+        // Base de Datos
+        BaseDatos.baseDatos();
     }
 
 }
